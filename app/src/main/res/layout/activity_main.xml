@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5F4EE"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/figura"
+            android:paddingTop="10dp"
+            android:layout_width="500dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/banner"/>
+
+        <TextView
+            android:id="@+id/contadorLabel"
+            android:layout_width="match_parent"
+            style="@style/estilo"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            tools:text="Questão"/>
+
+        <TextView
+            android:id="@+id/perguntaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="1in"
+            style="@style/estilo"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/contadorLabel"
+            android:gravity="center"
+            tools:text="Perguntas sobre o Fábio" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/figura"
+            android:textColor="#FFFFFF">
+
+
+            <Button
+                android:id="@+id/respostaBtn1"
+                style="@style/RespLayout"
+                android:layout_gravity="center"
+                android:text="Resposta 1"
+                android:onClick="checkResposta"/>
+
+            <Button
+                android:id="@+id/respostaBtn2"
+                style="@style/RespLayout"
+                android:layout_gravity="center"
+                android:text="Resposta 2"
+                android:onClick="checkResposta"/>
+
+            <Button
+                android:id="@+id/respostaBtn3"
+                style="@style/RespLayout"
+                android:layout_gravity="center"
+                android:text="Resposta 3"
+                android:onClick="checkResposta"/>
+
+            <Button
+                android:id="@+id/respostaBtn4"
+                style="@style/RespLayout"
+                android:layout_gravity="center"
+                android:text="Resposta 4"
+                android:onClick="checkResposta"/>
+
+
+            <Button
+                style="@style/RespLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Resposta"
+                android:onClick="teste"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
